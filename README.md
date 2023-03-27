@@ -1,108 +1,287 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Site Logo](readme/logo.png)
+## Table of Contents
+* [Purpose](#Purpose)
+* [User Experience (UX)](#User-Experience-(UX))
+    * [Site](#Site)
+        * [Goals](#Goals)
+        * [Design Wireframes](#Design-Wireframes)
+        * [Logo](#Logo)
+        * [Design Color-Scheme](#Design-Color-Scheme)
+        * [Typography](#Typography)
+        * [Structure (map)](#Structure-(map))
+        * [Database (models)](#Database-(models))
+    * [Features Left-to-Implement](#Features-Left-to-Implement)
+* [Agile](#Agile)
+    * [User Stories](#User-Stories)
+* [Technologies](#Technologies)
+    * [User Goals](#User-Goals)
+* [Testing](#Testing)
+    * [Test Results](#Test-Results)
+        * [Validators](#Validators)
+        * [Lighthouse](#Lighthouse)
+    * [Testing Issues](#Testing-Issues)
+* [Deployment to Heroku](#Deployment-to-Heroku)
+    * [Creating a Django Project](#Creating-a-Django-Project)
+    * [Creating an Heroku App](#Creating-an-Heroku-App)
+    * [Setting Up Environment Variables](Setting-Up-Environment-Variables)
+    * [Configuring "settings.py"](Configuring-"settings.py")
+    * [Heroku Deployment](Heroku-Deployment)
+    * [Final Deployment](Final-Deployment)
+* [GitHub](#GitHub)
+    * [Clone](#Clone)
+    * [Fork](#Fork)
+    * [Commands](#Commands)
+* [Credits](#Credits)
+    * [Content](#Content)
+    * [Media](#Media)
+    * [Acknowledgements](#Acknowledgements)
 
-Welcome baptistapaulo,
+## Purpose
+The idea behind this site is to provide a space where users can keep a track of their readings through a list of books.
+Users should also be able to fill in with comments about any specifics of the book or just if they would or not recommend it to others.
+Books may also be marked as like or unlike in order to create a ranking of the best books.
+This app may be used as a personal bookshelf or a public blog where people can read anonymously the book references and ranking.
+Future features should include a storage area where users may upload their (e)books and share them with others.
+Another feature could be donations where users may register a book to be donated under some conditions.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The live website can be found [here](https://pp4-bookshelf.herokuapp.com/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[Table-of-Contents](#Table-of-Contents)
 
-## Gitpod Reminders
+## User Experience (UX)
+### Site
+#### Goals
+* to allow users viewing their book listing or others
+* to allow users creating , updating or deleting comments
+* to find books according to their needs or interests
+* to provide an admin privilege to approve, update or delete comments
+#### Design Wireframes
+![home](readme/home.PNG)
+![login](readme/signin.PNG)
+![bookshelf](readme/bookshelf.PNG)
+![account](readme/account.png)
+#### Logo
+![logo](readme/logo.png)
+#### Design Color-Scheme
+* Predominant colours across all site are white and purple [54407A]
+* Grey and grey ocasionaly.
+![Color](readme/color.PNG)
+#### Typography
+**DynaPuff** (designed by Toshi Omagari, Jennifer Daniel) from Google fonts was used mostly for headers and logo title.
+**Arial** (Helvetica, sans-serif) was used mostly for any other text in all sections, including the menu and form.
+#### Structure (map)
+![site-map](readme/site_map.PNG)
+#### Database (models)
+![model](readme/model.PNG)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Features Left-to-Implement
+* Repository for (e)books to be uploaded by registered users and sharing with other registered users 
+* Donation for books where users may fill a form and then receive details on how to send the book (free of charges) to help local communities
+* Search bar to find books by name or author
 
-`python3 -m http.server`
+[Table-of-Contents](#Table-of-Contents)
 
-A blue button should appear to click: _Make Public_,
+### Agile
+Agile methodology was used to plan this project and then through GitHub and Kanban board, the app deployment using MoSCoW prioritisation.
+![agile](readme/agile.PNG)
+#### User Stories
+A project called "bookshelf" was created using a single iteration with the following user stories.
+* As a user I can see the navbar so that I can navigate over the homepage
+* As a user I can sign in so that I can have access to full site contents
+* As a new user I can register so that I have access to full site contents
+* As a user I can sign out so that other users can navigate without using someone else credentials
+* As a user I can add a book so that a books listing is available
+* As a user I can add a comment so that books are rated
+* As a user I can delete a book or comment so that the books listing is kept updated
+* As a user I can create a profile so that the administrator knows more about the user
+* As an admin I can edit or delete comments so that the book listing is kept under control
+* As an admin I can approve comments so that the contents are kept under control
+* As a user I can upload a book url so that a book can be accessible to others (sharing)
+* As a user I can search a book so that access to other contents is made easier
+* As a user I can like or unlike a book so that the book listing is rated (ranking)
+![site-map](readme/site_map.PNG)
 
-Another blue button should appear to click: _Open Browser_.
+[Table-of-Contents](#Table-of-Contents)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Technologies
+* Languages
+    * Python
+    * Bootstrap
+    * Django
+    * Cloudinary
+    * Heroku
+* Frameworks and other resources
+    * HTML
+    * CSS
+    * JavaScript
+    * Google fonts
+    * Font Awesome
+    * GitHub
+    * GitPod
+    * Git
+    * Google Chrome Developer Tools
+    * TinyPNG
+    * Stackoverflow
+    * W3schools
 
-A blue button should appear to click: _Make Public_,
+[Table-of-Contents](#Table-of-Contents)
 
-Another blue button should appear to click: _Open Browser_.
+## Testing
+### Test-Results
+#### Validators
+* HTML - Official W3C validator [here](https://validator.w3.org/)
+* CSS - Official (Jigsaw) validator [here](https://jigsaw.w3.org/css-validator/)
+* Lighthouse – Developer Tools
+* Chrome – Developer Tools
+* Responsive Design [here](https://ui.dev/amiresponsive)
+* Python - [here](https://pep8ci.herokuapp.com/#)
+* Javascript - [here](https://jshint.com//)
+![responsive](readme/responsive-results.png)
+#### Lighthouse
+![lighthouse-home-results-performance](readme/lighthouse-home.PNG)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Testing-Issues
+* Bugs identified that need to be fixed.
+    * 
+    * 
 
-To log into the Heroku toolbelt CLI:
+[Table-of-Contents](#Table-of-Contents)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Deployment to Heroku
+### Creating a Django Project
+* Install Django and gunicorn: `pip3 install django gunicorn`
+* Install supporting database libraries dj_database_url and psycopg2 library: `pip install dj_database_url psycopg2`
+* Install Cloudinary libraries to manage static files: `pip install dj-3-cloudinary-storage`
+* Create file for requirements: `pip freeze --local > requirements.txt`
+* Create project:`django-admin startproject project_name .`
+* Create app: `python manage.py startapp app_name`
+* Add app to list of `installed apps` in settings.py file: `'app_name'`
+* Migrate changes: `python manage.py migrate`
+* Test server works locally: `python manage.py runserver`
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Creating an Heroku App
+* Navigate to the Heroku website
+* Create a Heroku account
+* Activate the account
+* Click the **new button** on the top right corner of the screen and select create a new app
+* Enter a unique name for the application
+* Select the appropriate region for the application
+* Click create app
+* In the Heroku dashboard click on the Resources tab
+* Scroll down to Add-Ons, search for and select 'Heroku Postgres'
+* In the Settings tab, scroll down to 'Reveal Config Vars' and copy the text in the box beside DATABASE_URL
 
-------
+### Setting Up Environment Variables
+* Create a new env.py file
+* Add env.py to the .gitignore file
+* In env.py import the os library
+* In env.py add `os.environ["DATABASE_URL"]` = "copy link from Heroku DATABASE_URL"
+* In env.py add `os.environ["SECRET_KEY"] = "generate a random secret key"`
+* In Heroku Settings tab Config Vars enter the same secret key created in env.py
 
-## Release History
+### Configuring "settings.py"
+* In your Django 'settings.py' file type:
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+ ```
+ from pathlib import Path
+ import os
+ import dj_database_url
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
+ if os.path.isfile("env.py"):
+  import env
+ ```
+* Remove the default insecure secret key in settings.py and replace with the link to the secret key variable in Heroku
+* Comment out the `DATABASES` section in settings.py and replace
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+DATABASES = {
+  'default': 
+  dj_database_url.parse(os.environ.get("DATABASE_URL"))
+  }`
 ```
+* Create a Cloudinary account and from the 'Dashboard' in Cloudinary copy your url into the env.py file
+* In Heroku  add cloudinary url to 'config vars'
+* In Heroku config vars add DISABLE_COLLECTSTATIC with value of '1'
+* Add Cloudinary libraries to the installed apps section of settings.py
+ ```
+ 'cloudinary_storage'
+ 'django.contrib.staticfiles''
+ 'cloudinary'
+ ```
+* Connect Cloudinary to the Django app in `settings.py`
+```
+STATIC_URL = '/static'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'STATIC')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE =
+'cloudinary_storage.storage.MediaCloudinaryStorage'
+* Link file to the templates directory in Heroku 
+* Place under the BASE_DIR: TEMPLATES_DIR = os.path.join(BASE_DIR,
+'templates')
+```
+* Change the templates directory to TEMPLATES_DIR. Place within the TEMPLATES array: `'DIRS': [TEMPLATES_DIR]`
+* Add Heroku Hostname to ALLOWED_HOSTS: ```ALLOWED_HOSTS =
+['rhi-book-nook.herokuapp.com', 'localhost']```
+*Create Procfile at the top level of the file structure and insert the following:
+    ``` web: gunicorn PROJECT_NAME.wsgi ```
 
-**Anything more?**
+* Make an initial commit and push the code to the GitHub Repository
+    ```git add .```
+    ```git commit -m "Initial deployment"```
+    ```git push```
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Heroku Deployment
+* Click Deploy tab in Heroku
+* In the 'Deployment method' section select 'Github' and click the 'connect to Github' button to confirm
+* In the 'search' box enter the Github repository name for the project
+* Click search and then click connect to link the heroku app with the Github repository. The box will confirm that heroku is connected to the repository
 
----
+### Final Deployment
+* When development is complete change the debug setting to: `DEBUG = False` in `settings.py` 
+* In Heroku settings config vars change the DISABLE_COLLECTSTATIC value to '0'
+* Because DEBUG must be switched to True for development and False for production it is recommended that only manual deployment is used in Heroku 
+* To manually deploy click the button 'Deploy Branch'. The default 'main' option in the dropdown menu should be selected in both cases. 
+When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
 
-Happy coding!
+## GitHub
+### To clone the repository
+1. Click on the code button which is underneath the main tab and repository name to the right.
+2. In the 'Clone with HTTPS' section, click on the clipboard icon to copy the URL.
+3. Open Git Bash in your IDE of choice.
+4. Change the current working directory to where you want the cloned directory to be made.
+5. Type git clone, and then paste the URL copied from GitHub.
+6. Press enter and the clone of your repository will be created.
+
+### Fork the repository
+Most commonly, forks are used to either propose changes to someone else's project to which you do not have write access, or to use someone else's project as a starting point for your own idea. You can fork a repository to create a copy of the repository and make changes without affecting the upstream repository.
+So a fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+1. Navigate to the GitHub Repository you want to fork.
+1. On the top right of the page under the header, click the fork button.
+1. Create a new fork.
+1. This will create a duplicate of the full project in your GitHub Repository.
+
+### Commands
+* `CTRL + S` was used to save the page.
+* `CTRL + Z` was used to undo a change.
+* `python3 -m http.server` was used to view and test site before pushing live.
+* `git add` was used to add pages to the stage area.
+* `git commit -m "fix: message here"` was used to comit them them to github and provide a relevant message to the changes that had been made.
+* `git push` was used to push the changes upto Github for public viewing.
+
+[Table-of-Contents](#Table-of-Contents)
+
+## Credits
+### Content
+* Guidance for this project was gathered from CI modules FST (Hello Django & I Think Therefore I Blog) and Bootstrap (Putting It All together)
+
+### Media
+* The photos used in this website were taken from some resources such as the below.
+    * Pexels.com - used for images
+    * Unsplash.com - used for images
+    * Google.com - used for images
+
+### Acknowledgements
+* Huge thank you to my mentor **Ronan McClelland** for his guidance throughout my project.
+
+[Table-of-Contents](#Table-of-Contents)
