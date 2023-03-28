@@ -141,8 +141,10 @@ A project called "bookshelf" was created using a single iteration with the follo
 
 ### Testing-Issues
 * Bugs identified that need to be fixed.
-    * 
-    * 
+    * CSS stylesheet not linked properly (UX not available)
+    * Bootstrap not working properly
+    * Django admin access not working properly
+    * Initial deployment compromised by some of these technologies not working properly
 
 [Table-of-Contents](#Table-of-Contents)
 
@@ -151,12 +153,12 @@ A project called "bookshelf" was created using a single iteration with the follo
 * Install Django and gunicorn: `pip3 install django gunicorn`
 * Install supporting database libraries dj_database_url and psycopg2 library: `pip install dj_database_url psycopg2`
 * Install Cloudinary libraries to manage static files: `pip install dj-3-cloudinary-storage`
-* Create file for requirements: `pip freeze --local > requirements.txt`
-* Create project:`django-admin startproject project_name .`
-* Create app: `python manage.py startapp app_name`
+* Create a file for the requirements: `pip freeze --local > requirements.txt`
+* Create the project:`django-admin startproject project_name .`
+* Create an app: `python manage.py startapp app_name`
 * Add app to list of `installed apps` in settings.py file: `'app_name'`
-* Migrate changes: `python manage.py migrate`
-* Test server works locally: `python manage.py runserver`
+* Migrate the changes: `python manage.py migrate`
+* Test if server works locally: `python manage.py runserver`
 
 ### Creating an Heroku App
 * Navigate to the Heroku website

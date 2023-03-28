@@ -5,23 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="/static/css/style.css">
     <title>Bookshelf</title>
 </head>
 
-<body>
-    <h1>This is my homepage for PP4!</h1>
+<body style="background-color: #54407A" >
+    <header>
+        <div>
+            <div>
+                <div style="text-align:center;">
+                    <div class="col heading">
+                        <h1 class="name">Project Milestone 4</h1>
+                        <table>
+                            {% for item in items %}
+                                <tr>
+                                    {% if item.done %}
+                                        <td><strike>{{ item.name }}</strike></td>
+                                    {% else %}
+                                        <td>{{ item.name }}</td>
+                                    {% endif %}
+                                </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                </div>
+                <div style="text-align:center;">
+                    <div class="col">
+                        <ul id="nav">
+                            <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item">
+                                <a href="#"><span>About</span></a>
+                            </li>
+                            <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item">
+                                <a href="#"><span>Bookshelf</span></a>
+                            </li>
+                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item">
+                                <a href="#"><span>Account</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
 
-    <table>
-        {% for item in items %}
-            <tr>
-                {% if item.done %}
-                    <td><strike>{{ item.name }}</strike></td>
-                {% else %}
-                    <td>{{ item.name }}</td>
-                {% endif %}
-            </tr>
-        {% endfor %}
-    </table>
-
+    </section>
+    <footer>
+        <div style="text-align:center;">
+            <div>
+                <div>
+                    <h5>Contact</h5>
+                </div>
+                <div>
+                    <h5>Social</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
