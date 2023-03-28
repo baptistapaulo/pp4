@@ -59,7 +59,7 @@ The live website can be found [here](https://pp4-bookshelf.herokuapp.com/)
 ![home](readme/home.PNG)
 ![login](readme/signin.PNG)
 ![bookshelf](readme/bookshelf.PNG)
-![account](readme/account.png)
+![account](readme/account.PNG)
 #### Logo
 ![logo](readme/logo.png)
 #### Design Color-Scheme
