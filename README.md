@@ -99,7 +99,6 @@ A project called "bookshelf" was created using a single iteration with the follo
 * As a user I can upload a book url so that a book can be accessible to others (sharing)
 * As a user I can search a book so that access to other contents is made easier
 * As a user I can like or unlike a book so that the book listing is rated (ranking)
-![site-map](readme/site_map.PNG)
 
 [Table-of-Contents](#Table-of-Contents)
 
