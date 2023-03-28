@@ -145,6 +145,7 @@ A project called "bookshelf" was created using a single iteration with the follo
     * Bootstrap not working properly
     * Django admin access not working properly
     * Initial deployment compromised by some of these technologies not working properly
+    * Issues deploying into Heroku
 
 [Table-of-Contents](#Table-of-Contents)
 
